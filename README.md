@@ -3,7 +3,7 @@
 
 for wordpress reverse proxy, open your wp-config.php. after PHP tag opening at the beginning of the file, add these lines of code:
 ````
-define('PROXY_DOMAIN', 'wahidin-proxy.herokuapp.com'); //change it to your proxy domain without http/s & slash (/) at the end!
+define('PROXY_DOMAIN', 'dev-viblog.pantheonsite.io'); //change it to your proxy domain without http/s & slash (/) at the end!
 define('.COOKIE_DOMAIN.', PROXY_DOMAIN);
 define('.SITECOOKIEPATH.', '.');
 if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) $_SERVER['REMOTE_ADDR'] = explode(',',$_SERVER['HTTP_X_FORWARDED_FOR'])[0];
